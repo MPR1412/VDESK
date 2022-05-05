@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811771196675",
+    "project_id": "vdesk-c6532",
+    "storage_bucket": "vdesk-c6532.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811771196675:android:58266905b4acfc2c0fa536",
+        "android_client_info": {
+          "package_name": "com.example.vdesk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811771196675-imuttfcip083525929uup0e7l55k9g5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeyPSSzcBCXnehP6gqFjspSLenyrRv2W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811771196675-imuttfcip083525929uup0e7l55k9g5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
