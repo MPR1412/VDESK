@@ -30,9 +30,13 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     // debugShowCheckedModeBanner: false,
       key: _scaffoldKey,
-      appBar: AppBar(title: Text("FACULTY LOGIN"), centerTitle: true,backgroundColor: Colors.lightGreenAccent,),
+      appBar: AppBar(title: Text("FACULTY LOGIN"), centerTitle: true,backgroundColor: Colors.lightGreenAccent,
+        ),
+     // debugShowCheckedModeBanner: false,
       body: Container(
+       // debugShowCheckedModeBanner: false,
         padding: EdgeInsets.symmetric(horizontal: 20),
         child: Center(
           child: SingleChildScrollView(

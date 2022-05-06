@@ -8,7 +8,7 @@ class BVRIT extends StatelessWidget {
       padding: EdgeInsets.all(10.0),
       child: ListView(
         children: <Widget>[
-          Image.asset('assets/collegefrontgarden.jpg'),
+         // Image.asset('assets/collegefrontgarden.jpg'),
           Text(
             "\nBVRIT,NARSAPUR.",
             textAlign: TextAlign.center,

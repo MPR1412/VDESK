@@ -17,14 +17,14 @@ import '../itcontacts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class itdept extends StatelessWidget {
+class clubs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black45,
       appBar: AppBar(
         title: Text(
-          'IT DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
+          'CLUBS', /*style:TextStyle(color:Colors.black)*/
         ),
         backgroundColor: Colors.black,
         elevation: 10.0,
@@ -41,20 +41,20 @@ class itdept extends StatelessWidget {
               elevation: 10,
               margin: EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
+               /* onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => aboutit()));
-                },
+                },*/
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Icon(
-                        Icons.account_balance,
+                        Icons.person_search_rounded,
                         size: 50.0,
                       ),
-                      Text("About",
+                      Text("CLUB INQUIZTIVE",
                           textAlign: TextAlign.center,
                           style: new TextStyle(fontSize: 17.0))
                     ],
@@ -70,20 +70,20 @@ class itdept extends StatelessWidget {
               elevation: 10,
               margin: EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
+               /* onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => TimeTable()));
-                },
+                },*/
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Icon(
-                        Icons.access_time,
+                        Icons.my_library_music_rounded,
                         size: 50.0,
                       ),
-                      Text("Student's Time Table",
+                      Text("CULTURAL CLUB BVRIT",
                           textAlign: TextAlign.center,
                           style: new TextStyle(fontSize: 17.0))
                     ],
@@ -98,20 +98,20 @@ class itdept extends StatelessWidget {
               elevation: 10,
               margin: EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
+              /*  onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => itNotice()));
-                },
+                },*/
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Icon(
-                        Icons.warning,
+                        Icons.camera_alt_outlined,
                         size: 50.0,
                       ),
-                      Text("Notice",
+                      Text("MY BVRIT MEDIA",
                           textAlign: TextAlign.center,
                           style: new TextStyle(fontSize: 17.0))
                     ],
@@ -126,22 +126,22 @@ class itdept extends StatelessWidget {
               elevation: 10,
               margin: EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
+               /* onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => TeachersTimeTable()));
-                },
+                },*/
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Icon(
-                        Icons.warning,
+                        Icons.monitor_heart_outlined,
                         size: 50.0,
                       ),
-                      Text("Teacher's Time Table",
+                      Text("ENLIGHTENING LIVES",
                           textAlign: TextAlign.center,
                           style: new TextStyle(fontSize: 17.0))
                     ],
@@ -156,20 +156,20 @@ class itdept extends StatelessWidget {
               elevation: 10,
               margin: EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
+                /*onTap: () {
                   launch(
                       "https://drive.google.com/folderview?id=1S4yCJBfg9LwTIz5JWcaqQxE4NC_HJnTN");
-                },
+                },*/
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Icon(
-                        Icons.description,
+                        Icons.computer_sharp,
                         size: 50.0,
                       ),
-                      Text("Prev. Question Papers",
+                      Text("CODING BRIGADE BVRIT",
                           textAlign: TextAlign.center,
                           style: new TextStyle(fontSize: 17.0))
                     ],
@@ -184,22 +184,22 @@ class itdept extends StatelessWidget {
               elevation: 10,
               margin: EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
+               /* onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => itcontacts()));
-                },
+                },*/
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Icon(
-                        Icons.description,
+                        Icons.personal_video_sharp,
                         size: 50.0,
                       ),
-                      Text("Faculty Contacts",
+                      Text("SMALL TALK CLUB",
                           textAlign: TextAlign.center,
                           style: new TextStyle(fontSize: 17.0))
                     ],
@@ -213,7 +213,7 @@ class itdept extends StatelessWidget {
     );
   }
 }
-
+/*
 //Start of About Class
 class aboutit extends StatelessWidget {
   const aboutit({Key key}) : super(key: key);
@@ -343,7 +343,7 @@ class aboutit extends StatelessWidget {
                     margin: EdgeInsets.all(13.0),
                     child: InkWell(
                       onTap: _launchURLpub,
-                     /* onTap: () {
+                      /* onTap: () {
                         launch(
                             'https://www.bvrit.ac.in/it-publications');
                       },*/
@@ -808,4 +808,4 @@ _launchURLpub() async {
   } else {
     throw 'Could not launch $url';
   }
-}
+}*/

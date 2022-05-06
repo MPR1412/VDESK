@@ -8,12 +8,14 @@ import 'package:vdesk/faculty/authentication.dart';
 import 'package:vdesk/faculty/user_model.dart';
 import 'package:provider/provider.dart';
 
+import '../holidays.dart';
 import 'facultydept.dart';
 
 
 class Mainpage extends StatefulWidget {
   @override
   _MainpageState createState() => _MainpageState();
+  //debugShowCheckedModeBanner: false;
 }
 
 class _MainpageState extends State<Mainpage> {
@@ -50,9 +52,13 @@ class _MainpageState extends State<Mainpage> {
 
   @override
   Widget build(BuildContext context) {
+    debugShowCheckedModeBanner: false;
     return Scaffold(
+        //debugShowCheckedModeBanner: false,
         backgroundColor: Colors.white,
+        //debugShowCheckedModeBanner: false,
         body: SafeArea(
+         // debugShowCheckedModeBanner: false,
           child: ListView(
 
             //crossAxisAlignment: CrossAxisAlignment.start,
@@ -263,10 +269,10 @@ class _MainpageState extends State<Mainpage> {
                               child: GestureDetector(
                                   onTap: () {
                                     // To do
-                                    /*   Navigator.push(
+                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => holidays()));*/
+                                            builder: (context) => holidays()));
                                   },
                                   child: Card(
                                     color: Color.fromARGB(255, 21, 21, 21),
@@ -283,14 +289,14 @@ class _MainpageState extends State<Mainpage> {
                                               Image.asset(
                                                   'assets/images/holiday1.jpg'),
                                               SizedBox(height: 10.0),
-                                              Text("Holidays", style: TextStyle(
+                                              Text("HOLIDAYS", style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 20.0,
 
                                               )),
                                               SizedBox(height: 5.0),
-                                              Text("List", style: TextStyle(
+                                              Text("LIST", style: TextStyle(
                                                   color: Colors.white,
                                                   fontWeight: FontWeight.w100
 

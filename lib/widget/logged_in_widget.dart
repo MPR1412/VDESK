@@ -8,6 +8,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../About.dart';
+import '../Departments/itdept.dart';
+import '../clubs.dart';
 import '../contacts.dart';
 import '../holidays.dart';
 import '../itcontacts.dart';
@@ -103,7 +105,7 @@ class LoggedInWidget extends StatelessWidget {
                                       children: [
                                         Image.asset('assets/mybvrit1.jpg'),
                                         SizedBox(height: 25.0),
-                                        Text("About", style: TextStyle(
+                                        Text("ABOUT", style: TextStyle(
                                           color: Colors.red,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 15.0,
@@ -152,7 +154,7 @@ class LoggedInWidget extends StatelessWidget {
                                           children: [
                                             Image.asset('assets/images/academic.png'),
                                             SizedBox(height: 10.0),
-                                            Text("Departments", style: TextStyle(
+                                            Text("DEPARTMENTS", style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 20.0,
@@ -198,14 +200,14 @@ class LoggedInWidget extends StatelessWidget {
                                           children: [
                                             Image.asset('assets/images/contact.jpg'),
                                             SizedBox(height: 10.0),
-                                            Text("Administration", style: TextStyle(
+                                            Text("ADMINISTRATION", style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 20.0,
 
                                             )),
                                             SizedBox(height: 5.0),
-                                            Text("Contacts", style: TextStyle(
+                                            Text("CONTACTS", style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.w100
 
@@ -244,14 +246,14 @@ class LoggedInWidget extends StatelessWidget {
                                           children: [
                                             Image.asset('assets/images/exam1.jpg'),
                                             SizedBox(height: 10.0),
-                                            Text("Examination", style: TextStyle(
+                                            Text("EXAM", style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 20.0,
 
                                             )),
                                             SizedBox(height: 5.0),
-                                            Text("Branch", style: TextStyle(
+                                            Text("BRANCH", style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.w100
 
@@ -289,14 +291,14 @@ class LoggedInWidget extends StatelessWidget {
                                           children: [
                                             Image.asset('assets/images/notice1.jpg'),
                                             SizedBox(height: 10.0),
-                                            Text("Main", style: TextStyle(
+                                            Text("MAIN", style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 20.0,
 
                                             )),
                                             SizedBox(height: 5.0),
-                                            Text("Notice", style: TextStyle(
+                                            Text("NOTICE", style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.w100
 
@@ -319,7 +321,7 @@ class LoggedInWidget extends StatelessWidget {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => itcontacts()));
+                                            builder: (context) => clubs()));
                                   },
                                   child: Card(
                                     color: Color.fromARGB(255, 21, 21, 21),
@@ -335,7 +337,7 @@ class LoggedInWidget extends StatelessWidget {
                                           children: [
                                             Image.asset('assets/images/clubs.png'),
                                             SizedBox(height: 10.0),
-                                            Text("Clubs", style: TextStyle(
+                                            Text("CLUBS", style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 20.0,
@@ -381,14 +383,14 @@ class LoggedInWidget extends StatelessWidget {
                                           children: [
                                             Image.asset('assets/images/holiday1.jpg'),
                                             SizedBox(height: 10.0),
-                                            Text("Holidays", style: TextStyle(
+                                            Text("HOLIDAYS", style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
                                               fontSize: 20.0,
 
                                             )),
                                             SizedBox(height: 5.0),
-                                            Text("List", style: TextStyle(
+                                            Text("LIST", style: TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.w100
 
@@ -401,7 +403,7 @@ class LoggedInWidget extends StatelessWidget {
                                 )
                                 )
                             ),
-                        SizedBox(
+                     /*   SizedBox(
                                 width: 160.0,
                                 height: 160.0,
                                 child: GestureDetector(
@@ -446,7 +448,7 @@ class LoggedInWidget extends StatelessWidget {
                                 )
 
                             )
-                        )
+                        )*/
 
                       ],
                     ),

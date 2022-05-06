@@ -44,10 +44,10 @@ class user extends StatelessWidget {
                       Icons.public,
                       color: Colors.black,
                     ),
-                    title: Text(" College's Official Website",),
+                    title: Text(" COLLEGE WEBSITE",),
                       onTap: () {
                         launch(
-                            'https://www.linkedin.com/school/sdm-college-of-engg-&-tech-dharwad/about/');
+                            'https://www.bvrit.ac.in/');
                       },
                      // focusColor:Colors.black,
 
@@ -58,29 +58,29 @@ class user extends StatelessWidget {
                       FontAwesomeIcons.linkedin,
                       color: Colors.blue,
                     ),
-                    title: Text("Linkedin"),
-                    /*onTap: () {
+                    title: Text("LINKEDIN"),
+                    onTap: () {
                     launch(
-                        'https://www.linkedin.com/school/sdm-college-of-engg-&-tech-dharwad/about/');
-                  },*/
+                        'https://www.linkedin.com/school/bv-raju-institute-of-technology-bvrit-/');
+                  },
                   ),
                   ListTile(
                     leading: FaIcon(
                       FontAwesomeIcons.youtube,
                       color: Colors.red,
                     ),
-                    title: Text("College's Youtube channel"),
-                    /* onTap: () {
+                    title: Text("YOUTUBE CHANNEL"),
+                     onTap: () {
                     launch(
-                        'https://www.youtube.com/channel/UCYuupsA7tts1Edy0kotGTUg');
-                  },*/
+                        'https://www.youtube.com/c/VishnuSociety');
+                  },
                   ),
                   ListTile(
                     leading: FaIcon(
                       FontAwesomeIcons.instagram,
                       color: Colors.purple,
                     ),
-                    title: Text("officialinsignia"),
+                    title: Text("OFFICIAL INSTAGRAM"),
                     /*onTap: () {
                     launch('https://www.instagram.com/officialinsignia/');
                   },*/
@@ -91,17 +91,17 @@ class user extends StatelessWidget {
                       color: Colors.blue,
                     ),
                     title: Text("BVRIT"),
-                    /* onTap: () {
+                     onTap: () {
                     launch(
-                        'https://m.facebook.com/profile.php?id=108137289220258');
-                  },*/
+                        'https://www.facebook.com/BVRIT');
+                  },
                   ),
                   ListTile(
                     leading: FaIcon(
                       FontAwesomeIcons.facebookSquare,
                       color: Colors.blue,
                     ),
-                    title: Text("BVRIT Alumni"),
+                    title: Text("BVRIT ALUMNI"),
                     /*onTap: () {
                     launch('https://www.facebook.com/sdmcetalumni/');
                   },*/
@@ -111,7 +111,7 @@ class user extends StatelessWidget {
                       FontAwesomeIcons.facebookSquare,
                       color: Colors.blue,
                     ),
-                    title: Text("BVRIT Media Official"),
+                    title: Text("BVRIT MEDIA"),
                     /*onTap: () {
                     launch('https://www.facebook.com/SDMCETMEDIAOFFICIAL/');
                   },*/
@@ -121,24 +121,24 @@ class user extends StatelessWidget {
                       FontAwesomeIcons.mapMarkerAlt,
                       color: Colors.red,
                     ),
-                    title: Text("Google Maps Location"),
-                    /*onTap: () {
-                    launch('https://goo.gl/maps/eEy8Y7Q11DnQTvvu7');
-                  },*/
+                    title: Text("MAP"),
+                    onTap: () {
+                    launch('https://www.google.com/maps/search/bvrit+location/@17.6282472,78.2442212,12z/data=!3m1!4b1');
+                  },
                   ),
-                  ListTile(
+                 /* ListTile(
                     leading: FaIcon(
                       FontAwesomeIcons.code,
                       color: Colors.black,
                     ),
                     title: Text("About Developer"),
-                    /* onTap: () {
+                     onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => AboutDeveloper()));
-                  },*/
-                  ),
+                  },
+                  ),*/
                 ],
               ),
             )),
@@ -154,9 +154,10 @@ class user extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(6.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
-                    image: NetworkImage("https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg"),
+                   // image: NetworkImage("https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg"),
+                    image: NetworkImage("https://svespsychologybvrm.in/images/bvrajugarupic.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -166,8 +167,9 @@ class user extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(6.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
+                   // image: NetworkImage("https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg"),
                     image: NetworkImage("https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg"),
                     fit: BoxFit.cover,
                   ),
@@ -178,9 +180,9 @@ class user extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(6.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
-                    image: NetworkImage("https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg"),
+                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2EDyEuUEIIDf19SQYyaZjRQY1fphd8piaBCTpfdrt2tgQpdTjre7TROqeI67wX8icK8&usqp=CAU"),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -190,9 +192,9 @@ class user extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(6.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
-                    image: NetworkImage("https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg"),
+                    image: NetworkImage("https://www.google.com/maps/uv?pb=!1s0x3bcc0af1ba39c677%3A0xc4ae2d2cf9b35b63!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipONbExWBKDlvA8Xj3CII9zQmjgxRbN7qEKLyZHK%3Dw300-h200-k-no!5sbvrit%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipONbExWBKDlvA8Xj3CII9zQmjgxRbN7qEKLyZHK&hl=en&sa=X&ved=2ahUKEwiU19u1jsr3AhWMT2wGHZ3pCwoQoip6BAhXEAM"),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -202,10 +204,10 @@ class user extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(6.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
                      fit: BoxFit.cover,
-                        image:NetworkImage("https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg"),
+                        image:NetworkImage("https://bvrit.ac.in/images/campustour/IndoorSportsCom.jpg"),
 
                     ),
                   ),
@@ -216,7 +218,7 @@ class user extends StatelessWidget {
 
             //Slider Container properties
             options: CarouselOptions(
-              height: 180.0,
+              height: 300.0,
               enlargeCenterPage: true,
               autoPlay: true,
               aspectRatio: 16 / 9,
@@ -276,7 +278,7 @@ class user extends StatelessWidget {
                  )
              )
          ),
-         SizedBox(
+        /* SizedBox(
              width: 160.0,
              height: 160.0,
              child: GestureDetector(
@@ -322,7 +324,7 @@ class user extends StatelessWidget {
                    ),
                  )
              )
-         ),
+         ),*/
 
          SizedBox(
              width: 160.0,

@@ -12,14 +12,17 @@ import 'facultycse.dart';
 class facultyitdept extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+  //  debugShowCheckedModeBanner: false;
     return Scaffold(
       backgroundColor: Colors.black45,
+      //debugShowCheckedModeBanner: false,
       appBar: AppBar(
         title: Text(
           'INFORMATION TECHNOLOGY DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
         ),
         backgroundColor: Colors.black,
         elevation: 10.0,
+       // debugShowCheckedModeBanner: false,
       ),
       body: Container(
         padding: EdgeInsets.all(20.0),

@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class EmailSignInProvider extends ChangeNotifier {
+  //debugShowCheckedModeBanner: false,
   bool _isLoading;
   bool _isLogin;
   String _userEmail;

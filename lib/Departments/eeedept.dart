@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'dart:math';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class eeedept extends StatelessWidget {
       backgroundColor: Colors.black45,
       appBar: AppBar(
         title: Text(
-          'ElECTRICAL AND ELECTRONICS DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
+          'EEE DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
         ),
         backgroundColor: Colors.black,
         elevation: 10.0,
@@ -42,7 +43,7 @@ class eeedept extends StatelessWidget {
               child: InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => abouteee()));
+                      MaterialPageRoute(builder: (context) => aboutit()));
                 },
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
@@ -99,7 +100,7 @@ class eeedept extends StatelessWidget {
               child: InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => eeeNotice()));
+                      MaterialPageRoute(builder: (context) => itNotice()));
                 },
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
@@ -157,7 +158,7 @@ class eeedept extends StatelessWidget {
               child: InkWell(
                 onTap: () {
                   launch(
-                      "https://drive.google.com/file/d/1lPnOQs8Jgph4g2VJ6zxdIhbUesRRFvXA/view");
+                      "https://drive.google.com/folderview?id=1S4yCJBfg9LwTIz5JWcaqQxE4NC_HJnTN");
                 },
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
@@ -184,10 +185,10 @@ class eeedept extends StatelessWidget {
               margin: EdgeInsets.all(8.0),
               child: InkWell(
                 onTap: () {
-                 /* Navigator.push(
+                  Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => eeecontacts()));*/
+                          builder: (context) => itcontacts()));
                 },
                 splashColor: Colors.lightBlueAccent,
                 child: Center(
@@ -214,15 +215,15 @@ class eeedept extends StatelessWidget {
 }
 
 //Start of About Class
-class abouteee extends StatelessWidget {
-  const abouteee({Key key}) : super(key: key);
+class aboutit extends StatelessWidget {
+  const aboutit({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'ELECTRICAL AND ELECTRONICS DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
+          'INFORMATION TECHNOLOGY DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
         ),
         backgroundColor: Colors.black,
         elevation: 10.0,
@@ -231,8 +232,7 @@ class abouteee extends StatelessWidget {
         children: <Widget>[
           ListView(
             children: <Widget>[
-              Image.network(
-                  "https://i.ytimg.com/vi/hpt6qqKHdY8/hqdefault.jpg"),
+              Image.asset("assets/images/itblock.jpg"),
               Center(
                 child: Text(
                   "\nSwipe Left for Additional link",
@@ -318,10 +318,7 @@ class abouteee extends StatelessWidget {
                     elevation: 5,
                     margin: EdgeInsets.all(13.0),
                     child: InkWell(
-                      onTap: () {
-                        launch(
-                            'https://www.bvrit.ac.in/it-overview');
-                      },
+                      onTap: _launchURLApp,
                       splashColor: Colors.lightBlueAccent,
                       child: Center(
                         child: Column(
@@ -345,10 +342,11 @@ class abouteee extends StatelessWidget {
                     elevation: 5,
                     margin: EdgeInsets.all(13.0),
                     child: InkWell(
-                      onTap: () {
+                      onTap: _launchURLpub,
+                      /* onTap: () {
                         launch(
                             'https://www.bvrit.ac.in/it-publications');
-                      },
+                      },*/
                       splashColor: Colors.lightBlueAccent,
                       child: Center(
                         child: Column(
@@ -605,7 +603,7 @@ class _TimeTable extends State<TimeTable> {
         backgroundColor: Colors.blue[50],
         appBar: AppBar(
           title: Text(
-            'ELECTRICAL AND ELECTRONICS DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
+            "INFORMATION TECHNOLOGY DEPARTMENT", /*style:TextStyle(color:Colors.black)*/
           ),
           backgroundColor: Colors.black,
           elevation: 10.0,
@@ -648,6 +646,7 @@ class _TimeTable extends State<TimeTable> {
 }
 //end of class TimeTable
 
+
 //Start of class time table
 class TeachersTimeTable extends StatefulWidget {
   _TeachersTimeTable createState() => new _TeachersTimeTable();
@@ -682,7 +681,7 @@ class _TeachersTimeTable extends State<TeachersTimeTable> {
         backgroundColor: Colors.blue[50],
         appBar: AppBar(
           title: Text(
-            'ELECTRICAL AND ELECTRONICS DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
+            'INFORMATION TECHNOLOGY DEPARTMENT', /*style:TextStyle(color:Colors.black)*/
           ),
           backgroundColor: Colors.black,
           elevation: 10.0,
@@ -723,11 +722,11 @@ class _TeachersTimeTable extends State<TeachersTimeTable> {
 //end of Teacher's TimeTable
 
 //Start of Notice
-class eeeNotice extends StatefulWidget {
-  _eeeNotice createState() => new _eeeNotice();
+class itNotice extends StatefulWidget {
+  _itNotice createState() => new _itNotice();
 }
 
-class _eeeNotice extends State<eeeNotice> {
+class _itNotice extends State<itNotice> {
   StreamSubscription<QuerySnapshot> subscription;
   List<DocumentSnapshot> timeTable;
 
@@ -792,5 +791,21 @@ class _eeeNotice extends State<eeeNotice> {
           crossAxisSpacing: 2.0,
         )
             : new Loading());
+  }
+}
+_launchURLApp() async {
+  const url = 'https://www.bvrit.ac.in/it-overview';
+  if (await canLaunch(url)) {
+    await launch(url, forceSafariVC: true, forceWebView: true);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+_launchURLpub() async {
+  const url = 'https://www.bvrit.ac.in/it-overview';
+  if (await canLaunch(url)) {
+    await launch(url, forceSafariVC: true, forceWebView: true);
+  } else {
+    throw 'Could not launch $url';
   }
 }
